@@ -85,14 +85,14 @@ setInterval(()=>{
 
 window.onbeforeunload = function (event) {
     localStorage.setItem('donut', JSON.stringify({
-        donutClick: donutMaker.donutClick ?? 0,
-        donuctCount: donutMaker.donutCount ?? 0,
-        autoClicker: donutMaker.autoClicker ?? 0,
-        autoClickerCost: donutMaker.autoClickerCost ?? 0,
-        multiplier: donutMaker.multiplier ?? 0,
-        multiplierCost: donutMaker.multiplierCost ?? 0,
-        donutEarnedPerClick: donutMaker.donutEarnedPerClick ?? 0,
-        autoClickerEnabled: donutMaker.autoClickerEnabled ?? false,
-        clickMultiplierEnabled: donutMaker.clickMultiplierEnabled ?? false
+        donutClick: donutMaker.donutClick,
+        donuctCount: donutMaker.donutCount,
+        autoClicker: donutMaker.autoClicker,
+        autoClickerCost: donutMaker.autoClickerCost,
+        multiplier: donutMaker.multiplier,
+        multiplierCost: donutMaker.multiplierCost,
+        donutEarnedPerClick: donutMaker.donutEarnedPerClick,
+        autoClickerEnabled: donutMaker.autoClickerEnabled,
+        clickMultiplierEnabled: donutMaker.clickMultiplierEnabled
     }));
 };
