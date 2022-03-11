@@ -3,18 +3,19 @@ const localData = JSON.parse(localStorage.getItem('donut'))
 export default class DonutMaker {
 
     constructor() {
-        this.donutClick = localData.donutClick ?? 0;
-        this.donutCount = localData.donutCount ?? 1;
+        // this.donutClick = localData.donutClick ?? 0;
+        // this.donutCount = localData.donutCount ?? 1;
 
-        this.autoClicker = localData.autoClicker ?? 0;
-        this.autoClickerCost = localData.autoClickerCost ?? 100;
+        // this.autoClicker = localData.autoClicker ?? 0;
+        // this.autoClickerCost = localData.autoClickerCost ?? 100;
 
-        this.multiplier = localData.multiplier ?? 0;
-        this.multiplierCost = localData.multiplierCost ?? 10;
-        this.donutEarnedPerClick = localData.donutEarnedPerClick ?? 1;
+        // this.multiplier = localData.multiplier ?? 0;
+        // this.multiplierCost = localData.multiplierCost ?? 10;
+        // this.donutEarnedPerClick = localData.donutEarnedPerClick ?? 1;
 
-        this.autoClickerEnabled = localData.autoClickerEnabled ?? false;
-        this.clickMultiplierEnabled = localData.clickMultiplierEnabled ?? false; 
+        // this.autoClickerEnabled = localData.autoClickerEnabled ?? false;
+        // this.clickMultiplierEnabled = localData.clickMultiplierEnabled ?? false; 
+        this.resetGame();
     }
 
     resetGame() {
