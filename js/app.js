@@ -5,6 +5,8 @@ updateView();
 
 const donutCollector = document.querySelector(".gameView");
 donutCollector.addEventListener("click", () => {
+    let changeSize = false;
+    const donutLogo = document.getElementById("img").classList.toggle("shake");;
     donutMaker.addDonut();
     updateView();
 })

@@ -197,28 +197,9 @@
     color: white;
 }
 
-
-@media screen and (max-width: 700px) {
-    .grid-container {
-        grid-template-areas: 
-        'header'
-        'main'
-        'footer';
-    }
-    .main{
-        flex-direction: column;
-    }
-    #img{
-        height: 200px;
-    }
-    .click{
-        justify-content: center;
-    }
-    .clickChangers{
-        margin-top: 20px;
-    }
+.shake {
+    height: 310px !important;
 }
-
 
 @media screen and (max-width: 600px) {
     .grid-container {
