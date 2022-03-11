@@ -1,4 +1,4 @@
-import DonutMaker from "./js/DonutMaker.js";
+import DonutMaker from "./DonutMaker.js";
 
 const donutMaker = new DonutMaker(); 
 updateView();
