@@ -1,0 +1,237 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'; 
+    /* gap: .2em; */
+    font-family: 'Bangers', cursive;
+    font-family: 'Sansita Swashed', cursive;
+    /* min-height: 100vh;
+    min-width: 100vh; */
+}
+.headerNav{
+    grid-area: header;
+    background-color: black;
+}
+.navigationLinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    /* height: 120px; */
+}
+.icon{
+    height: 1cm;
+    justify-content: space-around;
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdownContent p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+.dropdown-content p:hover {
+    background-color: grey;
+} 
+
+.dropdown:hover .dropdownContent {
+    display: block;
+    }
+  
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+.companyName{
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: -12px;
+    /* margin-bottom: -5px; */
+}
+.contactInfo{
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid white;
+    font-family: 'Bangers', cursive;
+    font-family: 'Sansita Swashed', cursive;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+.images:hover{
+    opacity: .7;
+}
+.inspiration{
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white;
+    font-family: 'Bangers', cursive;
+    font-family: 'Sansita Swashed', cursive;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.gameView{
+    text-align: center;
+    padding: 20px;
+}
+.click{
+    display: flex;
+    flex-direction: column;
+}
+.donutPerClick{
+    margin-top:-20px;
+    text-align: center;
+}
+#img{
+    height: 300px;
+    animation: rotation 8s infinite linear;
+    justify-content: center;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+.clickChangers{
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+.purchase{
+    background-color: grey;
+    border: solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.ownedMultiplier{
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.ownedAutoclicker{
+    margin-right: 10px;
+    font-size: 40px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.clickerIcon{
+    height: 50px;
+    padding-top: 5px;
+}
+.moneyIcon{
+    height: 20px;
+}
+.clickerPrice{
+    margin-left: 5px;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+}
+.multiplierPrice{
+    margin-left: 5px;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+.gameReset{
+    color: white;
+    background-color: black;
+    border:white;
+    border-radius: 10px;
+    padding: 10px;
+    width: px;
+    margin-top: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+    .grid-container {
+        grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    }
+    .main{
+        flex-direction: column;
+    }
+    #img{
+        height: 200px;
+    }
+    .click{
+        justify-content: center;
+    }
+    .clickChangers{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    }
+    .header{
+        flex-direction: row;
+    }
+    .main{
+        flex-direction: column;
+    }
+   
+}

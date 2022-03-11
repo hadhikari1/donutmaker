@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Sansita+Swashed:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Donut Clicker</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="headerNav">
+            <nav class="navigationLinks">
+                <article class="dropdown">
+                    <h3 class="dropbtn companyName">The Happy Baker</h3>
+                    <section class="dropdownContent">
+                        <p> Today we are going to be making donuts! To make donuts, 
+                            click the rotating donut. In the beginnig you will make 
+                            one donut per click. As you make donuts, you can use them 
+                            as currency to buy advantages. There are two advantages that 
+                            can be purchased. Mulpitlier increases the number of donuts 
+                            per click and autoclicker will automatically make donuts for 
+                            you, hence increasing the number of donuts you have. 
+
+                        </p>
+                    </section>
+                </article>
+                <article class="dropdown">
+                    <h4 class="dropbtn inspiration"> Inspiration</h4>
+                    <section class="dropdownContent">
+                        <p>Inspired by the game Cookie clicker.</p>
+                    </section>
+                </article>
+
+                <article class="dropdown">
+                    <h4 class="dropbtn contactInfo">Contact</h4>
+                    <section class="dropdownContent contact">
+                        <a class="images" href="https://hadhikari1.github.io/" target="_blank">
+                            <img class="icon" src="./images//portfolio.png" alt="">
+                        </a>
+                        <a class="images" href="https://github.com/hadhikari1" target="_blank">
+                            <img class="icon" src="./images/github.png" alt="">
+                        </a>
+                    </section>
+                </article>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="gameView">
+                <section class="click">
+                    <h2 class="donutCount">Donut Counts: 0</h2>
+                    <p class="donutPerClick">Per click:1 </p>
+                </section>
+                <section class="game">
+                    <img id="img" src="./images/donut.png" style="transform: rotate(90deg)"
+                        alt="donut with pink frosting">
+                    </img>
+                </section>
+            </article>
+            <summary class="clickChangers">
+                <article class="autoClicker">
+                    <h2>Purchase Autoclicker</h2>
+                    <section class="purchase">
+                        <section>
+                            <img class="clickerIcon" src="./images/clickerIcon.png" alt="clicker icon">
+                            <section class="counter">
+                                <img class="moneyIcon" src="./images/moneyIcon1.png" alt="images of two donuts">
+                                <h3 class="clickerPrice">100</h3>
+                            </section>
+                        </section>
+                        <p class="ownedAutoclicker">0</p>
+                    </section>
+                </article >
+
+                <article  class="clickMultiplier">
+                    <h2>Purchase Donut Multiplier</h2>
+                    <section class="purchase purchase2">
+                        <section>
+                            <img class="clickerIcon" src="./images/multiplierIcon.png" alt="image of" height="50px">
+                            <section class="counter">
+                                <img class="moneyIcon" src="./images/moneyIcon1.png" alt="images of two donuts">
+                                <h3 class="multiplierPrice">10</h3>
+                            </section>
+                        </section>
+                        <p class="ownedMultiplier">0</p>
+                    </section>
+                </article >
+                <button class="gameReset">Reset Game</button>
+            </summary>
+        </main>
+        <footer class="footer">
+            <p style="text-align: center"> Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> The Happy Baker, WCCI
+            </p>
+        </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
