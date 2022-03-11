@@ -2,10 +2,10 @@
   "name": "donut-clicker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./js/app.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "index.html",
+    "build": "build index.html",
     "test": "jest --watchAll"
   },
   "keywords": [],
